@@ -1,41 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
     android:orientation="vertical"
-
     tools:context=".presentation.FragmentDetailGif">
-
-
-
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gif_iv_fragment_detail"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toTopOf="@id/on_back_button"
-        tools:src="@drawable/android_icon" />
 
     <ProgressBar
         android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="visible"
-
         android:layout_gravity="center_horizontal"
-        app:layout_constraintVertical_bias="0.5" />
-    <Button
-        android:id="@+id/on_back_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/back"
-        android:textSize="16sp"
-        android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/gifImageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
-</LinearLayout>
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif_iv_fragment_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toTopOf="@id/on_back_button"
+            tools:src="@drawable/android_icon" />
+
+        <Button
+            android:id="@+id/on_back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/back"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gifImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
