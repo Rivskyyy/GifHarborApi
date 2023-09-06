@@ -20,7 +20,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideMyApi() : ApiGIf {
+    fun provideMyApi(): ApiGIf {
         return Retrofit.Builder()
             .baseUrl(Const.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
@@ -30,17 +30,14 @@ object AppModule {
 
 
     @Provides
-    fun bindsRepository(api : ApiGIf) : GifsRepository{
+    fun bindsRepository(api: ApiGIf): GifsRepository {
         return GifsRepositoryImpl(api)
     }
 
     @Provides
-    fun providesUseCase(repository: GifsRepository) : GetGifsUseCase {
-            return GetGifsUseCase(repository)
+    fun providesUseCase(repository: GifsRepository): GetGifsUseCase {
+        return GetGifsUseCase(repository)
     }
-
-
-
 
 
 }

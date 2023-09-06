@@ -11,8 +11,6 @@ interface ApiGIf {
 
         @GET("gifs/trending?api_key=$API_KEY") //  <-  put your API_KEY
         suspend fun gifResponse(
-                @Query("id")
-                 gif_id: String?
-        ) : Response<Gif>
+        ) : Response<Gif?>
 
 }
