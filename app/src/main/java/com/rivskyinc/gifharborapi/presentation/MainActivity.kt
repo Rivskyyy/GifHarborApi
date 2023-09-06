@@ -2,12 +2,15 @@ package com.rivskyinc.gifharborapi.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import com.rivskyinc.gifharborapi.R
+import com.rivskyinc.gifharborapi.databinding.ActivityMainBinding
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
     @Inject
     lateinit var viewModelFactory: MainViewModelFactory
 
@@ -21,7 +24,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         component.inject(this)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.progressBar.visibility = View.VISIBLE
+
+
 
     }
 }

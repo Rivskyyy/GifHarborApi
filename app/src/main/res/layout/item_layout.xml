@@ -24,7 +24,7 @@
             android:id="@+id/gif_iv"
             android:layout_width="0dp"
             android:layout_weight="0.7"
-            tools:src="@drawable/android"
+            tools:src="@drawable/android_icon"
             android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
