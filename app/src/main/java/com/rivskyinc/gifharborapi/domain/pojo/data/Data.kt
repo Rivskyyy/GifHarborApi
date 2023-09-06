@@ -1,15 +1,14 @@
-package com.rivskyInc.gifharbor.domain.entity_api.dataObjectItem
+package com.rivskyinc.gifharborapi.domain.pojo.data
 
-import com.rivskyInc.gifharbor.domain.entity_api.dataObjectItem.analytics.Analytics
-import com.rivskyInc.gifharbor.domain.entity_api.dataObjectItem.images.Images
+import com.rivskyinc.gifharborapi.domain.pojo.data.analytics.Analytics
+import com.rivskyinc.gifharborapi.domain.pojo.data.image.Images
 
-data class DataObjectItem(
+data class Data(
     val analytics: Analytics,
     val analytics_response_payload: String,
     val bitly_gif_url: String,
     val bitly_url: String,
     val content_url: String,
-    val cta: Cta,
     val embed_url: String,
     val id: String,
     val images: Images,

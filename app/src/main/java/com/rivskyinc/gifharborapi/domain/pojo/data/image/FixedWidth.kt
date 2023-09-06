@@ -1,8 +1,6 @@
-package com.rivskyInc.gifharbor.domain.entity_api.dataObjectItem.images
+package com.rivskyinc.gifharborapi.domain.pojo.data.image
 
-data class Original(
-    val frames: String,
-    val hash: String,
+data class FixedWidth(
     val height: String,
     val mp4: String,
     val mp4_size: String,

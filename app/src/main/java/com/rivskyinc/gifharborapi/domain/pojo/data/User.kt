@@ -1,4 +1,4 @@
-package com.rivskyInc.gifharbor.domain.entity_api.dataObjectItem
+package com.rivskyinc.gifharborapi.domain.pojo.data
 
 data class User(
     val avatar_url: String,

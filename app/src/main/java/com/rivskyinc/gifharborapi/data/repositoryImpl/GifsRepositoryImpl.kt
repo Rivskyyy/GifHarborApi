@@ -1,10 +1,7 @@
 package com.rivskyinc.gifharborapi.data.repositoryImpl
 
-import com.rivskyInc.gifharbor.domain.GifsRepository
-import com.rivskyInc.gifharbor.domain.entity_api.Gif
-
-
-
+import com.rivskyinc.gifharborapi.domain.GifsRepository
+import com.rivskyinc.gifharborapi.domain.pojo.Gif
 import javax.inject.Inject
 
 

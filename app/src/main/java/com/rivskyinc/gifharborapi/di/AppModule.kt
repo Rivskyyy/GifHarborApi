@@ -1,10 +1,10 @@
 package com.rivskyinc.gifharborapi.di
 
-import com.rivskyInc.gifharbor.domain.GetGifsUseCase
-import com.rivskyInc.gifharbor.domain.GifsRepository
 import com.rivskyinc.gifharborapi.Utils.Const
 import com.rivskyinc.gifharborapi.data.repositoryImpl.ApiGIf
 import com.rivskyinc.gifharborapi.data.repositoryImpl.GifsRepositoryImpl
+import com.rivskyinc.gifharborapi.domain.GetGifsUseCase
+import com.rivskyinc.gifharborapi.domain.GifsRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

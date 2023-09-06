@@ -1,4 +1,4 @@
-package com.rivskyInc.gifharbor.domain.entity_api
+package com.rivskyinc.gifharborapi.domain.pojo.pagination
 
 data class Pagination(
     val count: Int,

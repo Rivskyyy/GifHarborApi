@@ -2,7 +2,7 @@ package com.rivskyinc.gifharborapi.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.rivskyInc.gifharbor.domain.GetGifsUseCase
+import com.rivskyinc.gifharborapi.domain.GetGifsUseCase
 import javax.inject.Inject
 
 

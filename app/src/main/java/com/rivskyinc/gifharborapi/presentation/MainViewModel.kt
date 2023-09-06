@@ -6,8 +6,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.bumptech.glide.load.HttpException
-import com.rivskyInc.gifharbor.domain.GetGifsUseCase
-import com.rivskyInc.gifharbor.domain.entity_api.Gif
+import com.rivskyinc.gifharborapi.domain.GetGifsUseCase
+import com.rivskyinc.gifharborapi.domain.pojo.Gif
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.io.IOException

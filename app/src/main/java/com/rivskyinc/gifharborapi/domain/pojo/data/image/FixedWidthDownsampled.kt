@@ -1,6 +1,6 @@
-package com.rivskyInc.gifharbor.domain.entity_api.dataObjectItem.images
+package com.rivskyinc.gifharborapi.domain.pojo.data.image
 
-data class FixedHeightDownsampled(
+data class FixedWidthDownsampled(
     val height: String,
     val size: String,
     val url: String,

@@ -1,4 +1,4 @@
-package com.rivskyInc.gifharbor.domain.entity_api
+package com.rivskyinc.gifharborapi.domain.pojo.meta
 
 data class Meta(
     val msg: String,

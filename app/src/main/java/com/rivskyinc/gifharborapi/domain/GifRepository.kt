@@ -1,7 +1,6 @@
-package com.rivskyInc.gifharbor.domain
+package com.rivskyinc.gifharborapi.domain
 
-
-import com.rivskyInc.gifharbor.domain.entity_api.Gif
+import com.rivskyinc.gifharborapi.domain.pojo.Gif
 
 interface GifsRepository {
 
