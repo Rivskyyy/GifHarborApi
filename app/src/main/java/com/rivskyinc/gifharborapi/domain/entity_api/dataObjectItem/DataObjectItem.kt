@@ -1,0 +1,29 @@
+package com.rivskyInc.gifharbor.domain.entity_api.dataObjectItem
+
+import com.rivskyInc.gifharbor.domain.entity_api.dataObjectItem.analytics.Analytics
+import com.rivskyInc.gifharbor.domain.entity_api.dataObjectItem.images.Images
+
+data class DataObjectItem(
+    val analytics: Analytics,
+    val analytics_response_payload: String,
+    val bitly_gif_url: String,
+    val bitly_url: String,
+    val content_url: String,
+    val cta: Cta,
+    val embed_url: String,
+    val id: String,
+    val images: Images,
+    val import_datetime: String,
+    val is_sticker: Int,
+    val rating: String,
+    val slug: String,
+    val source: String,
+    val source_post_url: String,
+    val source_tld: String,
+    val title: String,
+    val trending_datetime: String,
+    val type: String,
+    val url: String,
+    val user: User,
+    val username: String
+)
