@@ -1,7 +1,8 @@
-package com.rivskyinc.gifharborapi
+package com.rivskyinc.gifharborapi.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.rivskyinc.gifharborapi.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

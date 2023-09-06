@@ -1,4 +1,4 @@
-package com.rivskyinc.gifharborapi.data.repository
+package com.rivskyinc.gifharborapi.data.repositoryImpl
 
 import com.rivskyInc.gifharbor.Utils.API_KEY
 import com.rivskyInc.gifharbor.domain.entity_api.Gif
