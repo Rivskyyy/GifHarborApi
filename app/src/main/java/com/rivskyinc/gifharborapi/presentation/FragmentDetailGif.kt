@@ -11,15 +11,14 @@ import com.rivskyinc.gifharborapi.databinding.FragmentDetailGifBinding
 
 class FragmentDetailGif : Fragment() {
     // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private var currentUrl: String? = null
+
 
     private lateinit var binding: FragmentDetailGifBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+            currentUrl = it.getString(URL)
         }
     }
 
@@ -33,12 +32,14 @@ class FragmentDetailGif : Fragment() {
     }
 
     companion object {
+
+        const val URL = "url"
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
+        fun newInstance(url: String,)
+        =
             FragmentDetailGif().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+                    putString(URL, url)
                 }
             }
     }

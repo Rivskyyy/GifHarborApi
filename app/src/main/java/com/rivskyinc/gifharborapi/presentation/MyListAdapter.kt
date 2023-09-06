@@ -1,5 +1,6 @@
 package com.rivskyinc.gifharborapi.presentation
 
+import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -10,7 +11,8 @@ import com.bumptech.glide.Glide
 import com.rivskyinc.gifharborapi.databinding.ItemLayoutBinding
 import com.rivskyinc.gifharborapi.domain.pojo.data.Data
 
-class MyAdapter : ListAdapter<Data, MyAdapter.GifsViewHolder>(GifItemDiffCallback()) {
+class MyListAdapter(private val context: Context,
+                    private val listener: (Data) -> Unit) : ListAdapter<Data, MyListAdapter.GifsViewHolder>(GifItemDiffCallback()) {
 
     var onClickListener: ((Data) -> Unit)? = null
 
@@ -39,7 +41,7 @@ class MyAdapter : ListAdapter<Data, MyAdapter.GifsViewHolder>(GifItemDiffCallbac
     override fun onBindViewHolder(holder: GifsViewHolder, position: Int) {
         val listOfGifs = getItem(position)
         holder.binding.tvTitle.text = listOfGifs.title
-        Glide.with(holder.itemView).load(listOfGifs.images.fixed_height_small.url)
+        Glide.with(context).load(listOfGifs.images.fixed_height_small.url)
             .into(holder.binding.gifIv)
 
         holder.itemView.setOnClickListener {
