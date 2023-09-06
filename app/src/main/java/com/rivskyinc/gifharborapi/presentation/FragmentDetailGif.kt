@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
 import com.rivskyinc.gifharborapi.R
 import com.rivskyinc.gifharborapi.databinding.FragmentDetailGifBinding
 
@@ -29,6 +30,12 @@ class FragmentDetailGif : Fragment() {
 
         binding = FragmentDetailGifBinding.inflate(layoutInflater, container, false )
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        Glide.with(this@FragmentDetailGif).load(currentUrl).into(binding.gifIvFragmentDetail)
     }
 
     companion object {
